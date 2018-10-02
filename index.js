@@ -49,8 +49,6 @@ function gulpRequireTasks (options) {
 
     gulp.task(
       taskName,
-      // @todo: deprecate `module.dep` in 2.0.0
-      module.deps || module.dep || [],
       module.nativeTask || taskFunction
     );
 
