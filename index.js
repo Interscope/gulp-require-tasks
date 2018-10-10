@@ -74,10 +74,11 @@ function gulpRequireTasks (options) {
       // @deprecated
       // @todo: remove this in 2.0.0
       if (options.arguments) {
-        console.warn(
-          'Usage of "arguments" option is deprecated and will be removed in next major version. ' +
-          'Use globals or module imports instead.'
-        );
+        // Quiet, this isn't even supported in Node yet.
+        //console.warn(
+        //  'Usage of "arguments" option is deprecated and will be removed in next major version. ' +
+        //  'Use globals or module imports instead.'
+        //);
         args = Array.from(options.arguments);
       }
 
